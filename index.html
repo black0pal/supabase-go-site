@@ -599,17 +599,58 @@
       </div>
     </section>
 
-    <!-- SUPPORT -->
-    <section id="support">
-      <div class="support-card">
-        <h2>Need Help?</h2>
-        <p>Have a question, found a bug, or want to request a feature? Send us an email and we will get back to you.</p>
-        <a class="support-email" href="mailto:black0pal@yahoo.com">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          black0pal@yahoo.com
-        </a>
+    <!-- LEGAL / POLICIES -->
+    <section id="legal" style="margin-bottom: 80px;">
+      <p class="section-label">Legal & Compliance</p>
+      <h2 class="section-title">Privacy & Data Control</h2>
+      
+      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 24px; overflow: hidden;">
+        <!-- Tabs Header -->
+        <div style="display: flex; border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.02);">
+          <button onclick="switchTab('privacy')" id="tab-privacy" style="flex: 1; padding: 20px; background: transparent; border: none; color: var(--tint); font-weight: 800; cursor: pointer; font-size: 14px; border-bottom: 2px solid var(--tint);">Privacy Policy</button>
+          <button onclick="switchTab('deletion')" id="tab-deletion" style="flex: 1; padding: 20px; background: transparent; border: none; color: var(--muted); font-weight: 800; cursor: pointer; font-size: 14px;">Account Deletion</button>
+        </div>
+        
+        <!-- Tab Content: Privacy -->
+        <div id="content-privacy" style="padding: 40px; display: block;">
+          <h3 style="margin-bottom: 16px;">Your Data Stays With You</h3>
+          <p style="color: var(--muted-light); margin-bottom: 24px; font-size: 15px;">Supabase Go is built with a security-first mindset. Your Personal Access Tokens (PATs) and database credentials never leave your device. We do not operate any middle-man servers that process your Supabase data.</p>
+          <a href="privacy.html" class="btn-secondary" style="padding: 10px 20px; font-size: 13px;">View Full Privacy Policy</a>
+        </div>
+        
+        <!-- Tab Content: Deletion -->
+        <div id="content-deletion" style="padding: 40px; display: none;">
+          <h3 style="margin-bottom: 16px;">Full Control Over Your Account</h3>
+          <p style="color: var(--muted-light); margin-bottom: 24px; font-size: 15px;">You can remove your profiles and wipe all local data directly within the app settings. Since we don't store your database credentials on our servers, "deletion" is as simple as clearing your local profile grid.</p>
+          <a href="delete-account.html" class="btn-secondary" style="padding: 10px 20px; font-size: 13px;">View Deletion Instructions</a>
+        </div>
       </div>
     </section>
+
+    <script>
+      function switchTab(tab) {
+        const priv = document.getElementById('content-privacy');
+        const dele = document.getElementById('content-deletion');
+        const tPriv = document.getElementById('tab-privacy');
+        const tDele = document.getElementById('tab-deletion');
+        
+        if (tab === 'privacy') {
+          priv.style.display = 'block';
+          dele.style.display = 'none';
+          tPriv.style.color = 'var(--tint)';
+          tPriv.style.borderBottom = '2px solid var(--tint)';
+          tDele.style.color = 'var(--muted)';
+          tDele.style.borderBottom = 'none';
+        } else {
+          priv.style.display = 'none';
+          dele.style.display = 'block';
+          tDele.style.color = 'var(--tint)';
+          tDele.style.borderBottom = '2px solid var(--tint)';
+          tPriv.style.color = 'var(--muted)';
+          tPriv.style.borderBottom = 'none';
+        }
+      }
+    </script>
   </div>
 
   <!-- FOOTER -->
@@ -619,7 +660,8 @@
       <p style="margin-top:8px;">
         <a href="#support">Support</a> &nbsp;&middot;&nbsp;
         <a href="#pricing">Pricing</a> &nbsp;&middot;&nbsp;
-        <a href="#">Privacy Policy</a>
+        <a href="privacy.html">Privacy Policy</a> &nbsp;&middot;&nbsp;
+        <a href="delete-account.html">Account Deletion</a>
       </p>
     </div>
   </footer>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - Supabase Go</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0B0F19;
+      --surface: #111827;
+      --border: rgba(255,255,255,0.07);
+      --tint: #3ECF8E;
+      --text: #F9FAFB;
+      --muted: #6B7280;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+    }
+    .container { max-width: 800px; margin: 0 auto; padding: 60px 24px; }
+    h1 { font-size: 42px; font-weight: 900; margin-bottom: 40px; color: var(--tint); }
+    h2 { font-size: 24px; font-weight: 800; margin-top: 40px; margin-bottom: 20px; }
+    p { margin-bottom: 20px; color: #D1D5DB; }
+    ul { margin-bottom: 20px; padding-left: 20px; color: #D1D5DB; }
+    li { margin-bottom: 10px; }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+    .back-link:hover { color: var(--tint); }
+    footer { border-top: 1px solid var(--border); padding: 40px 0; text-align: center; color: var(--muted); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+      Back to Home
+    </a>
+    
+    <h1>Privacy Policy</h1>
+    <p>Last Updated: May 12, 2026</p>
+    
+    <p>At Supabase Go, we prioritize your privacy and the security of your developer credentials. This policy outlines how we handle your data.</p>
+    
+    <h2>1. Data We Do NOT Collect</h2>
+    <p>We believe in absolute data sovereignty. Supabase Go is designed to be a "Zero-Server" architecture regarding your database credentials:</p>
+    <ul>
+      <li><strong>Personal Access Tokens (PATs):</strong> Your Supabase PATs are stored locally on your device using secure, encrypted storage. They are NEVER sent to our servers.</li>
+      <li><strong>Database Content:</strong> We do not see, store, or intercept any of the data from your Supabase projects. The app connects directly from your device to the Supabase API.</li>
+    </ul>
+    
+    <h2>2. Data We Collect</h2>
+    <p>To provide subscription services and improve the app, we collect minimal data:</p>
+    <ul>
+      <li><strong>RevenueCat:</strong> We use RevenueCat to manage subscriptions. This involves an anonymous identifier to track your "Pro" or "Business" status across devices.</li>
+      <li><strong>Diagnostics:</strong> We may collect anonymous crash reports and performance data to improve the application's stability.</li>
+    </ul>
+    
+    <h2>3. Security</h2>
+    <p>We implement industry-standard security measures, including:</p>
+    <ul>
+      <li><strong>Local Encryption:</strong> All sensitive credentials are stored in the device's secure enclave (Keychain on iOS).</li>
+      <li><strong>Biometric Lock:</strong> Users can enable FaceID or TouchID to prevent unauthorized local access to the application.</li>
+    </ul>
+    
+    <h2>4. Third-Party Services</h2>
+    <p>Supabase Go interacts with:</p>
+    <ul>
+      <li><strong>Supabase API:</strong> To manage your projects.</li>
+      <li><strong>Apple App Store:</strong> For payment processing and app distribution.</li>
+      <li><strong>RevenueCat:</strong> For subscription logic.</li>
+    </ul>
+    
+    <h2>5. Changes to This Policy</h2>
+    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+    
+    <h2>Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:black0pal@yahoo.com" style="color:var(--tint);">black0pal@yahoo.com</a>.</p>
+  </div>
+  
+  <footer>
+    <div class="container" style="padding:0;">
+      <p>&copy; 2026 Supabase Go. Built for the Supabase community.</p>
+    </div>
+  </footer>
+</body>
+</html>

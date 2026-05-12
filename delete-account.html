@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Account Deletion - Supabase Go</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0B0F19;
+      --surface: #111827;
+      --border: rgba(255,255,255,0.07);
+      --tint: #3ECF8E;
+      --text: #F9FAFB;
+      --muted: #6B7280;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+    }
+    .container { max-width: 800px; margin: 0 auto; padding: 60px 24px; }
+    h1 { font-size: 42px; font-weight: 900; margin-bottom: 40px; color: #EF4444; }
+    h2 { font-size: 24px; font-weight: 800; margin-top: 40px; margin-bottom: 20px; }
+    p { margin-bottom: 20px; color: #D1D5DB; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; margin: 40px 0; }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+    .back-link:hover { color: var(--tint); }
+    .step { display: flex; gap: 16px; margin-bottom: 24px; }
+    .step-num { width: 28px; height: 28px; background: var(--tint-dim); border: 1px solid var(--tint-border); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 800; color: var(--tint); flex-shrink: 0; }
+    footer { border-top: 1px solid var(--border); padding: 40px 0; text-align: center; color: var(--muted); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+      Back to Home
+    </a>
+    
+    <h1>Account Deletion Policy</h1>
+    
+    <p>At Supabase Go, we believe you should have full control over your data. Because our application is primarily client-side, "deleting your account" is a straightforward process handled directly within the app.</p>
+    
+    <div class="card">
+      <h2>How to delete your data</h2>
+      
+      <div class="step">
+        <div class="step-num">1</div>
+        <div>
+          <p><strong>Remove Profiles:</strong> Open the Supabase Go app, go to the Profile/Settings section, and delete each of your connected Supabase profiles. This immediately wipes all stored Personal Access Tokens (PATs) from your device's secure storage.</p>
+        </div>
+      </div>
+      
+      <div class="step">
+        <div class="step-num">2</div>
+        <div>
+          <p><strong>Cancel Subscriptions:</strong> If you have a Pro or Business subscription, you must cancel it via the Apple App Store settings on your iPhone. Deleting the app does not automatically cancel a paid subscription.</p>
+        </div>
+      </div>
+      
+      <div class="step">
+        <div class="step-num">3</div>
+        <div>
+          <p><strong>Request RevenueCat Deletion:</strong> While we don't store your database data, RevenueCat stores an anonymous identifier for your subscription. If you wish to have this identifier deleted, please email us at <a href="mailto:black0pal@yahoo.com" style="color:var(--tint);">black0pal@yahoo.com</a> with your request.</p>
+        </div>
+      </div>
+    </div>
+    
+    <h2>Data Retention</h2>
+    <p>Once you remove a profile from the app, all associated tokens and cached metadata are permanently purged from your device. We do not keep backups of your credentials on any server.</p>
+    
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need assistance with the deletion process, please reach out to us at <a href="mailto:black0pal@yahoo.com" style="color:var(--tint);">black0pal@yahoo.com</a>.</p>
+  </div>
+  
+  <footer>
+    <div class="container" style="padding:0;">
+      <p>&copy; 2026 Supabase Go. Built for the Supabase community.</p>
+    </div>
+  </footer>
+</body>
+</html>
